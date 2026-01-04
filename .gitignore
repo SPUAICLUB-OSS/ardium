@@ -1,0 +1,19 @@
+# OCaml / Dune build artifacts
+_build/
+.merlin
+*.cmi
+*.cmo
+*.cmx
+*.o
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Ardium generated binaries
+*.out
+*.exe
+*.s
+*.ll
