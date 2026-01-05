@@ -44,7 +44,7 @@ Currently, you can build Ardium from source (macOS/Linux):
 
 ```bash
 # Clone the repo
-git clone [https://github.com/dotmini/ardium.git](https://github.com/dotmini/ardium.git)
+git clone [https://github.com/spuaiclub-oss/ardium.git](https://github.com/dotmini/ardium.git)
 cd ardium
 
 # Build the compiler (Requires OCaml & LLVM)
