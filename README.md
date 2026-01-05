@@ -1,53 +1,49 @@
 # ⚡ Ardium
 
-**The High-Performance Systems Language with First-Class Native UI.**
+**ภาษาโปรแกรมประสิทธิภาพสูงสำหรับระบบ พร้อมการรองรับ Native UI ระดับ First-Class**
 
-![Ardium Badge](https://img.shields.io/badge/Status-Alpha-orange) ![License](arc.png)
+![Status](https://img.shields.io/badge/Status-Alpha-orange) ![License](arc.png)
 
-> **"Performance of C. Simplicity of Python. Native UI of Swift."**
+> **"ประสิทธิภาพระดับ C ความเรียบง่ายแบบ Python และ Native UI สไตล์ Swift"**
 
-Ardium is a statically-typed, compiled programming language built on **LLVM**. It is designed to bridge the gap between low-level systems programming and high-level application development.
+**Ardium** คือภาษาโปรแกรมแบบ Statically-typed ที่ผ่านการคอมไพล์ (Compiled Language) โดยพัฒนาขึ้นบนพื้นฐานโครงสร้างของ **LLVM** ออกแบบมาเพื่อลดช่องว่างระหว่างการเขียนโปรแกรมระดับระบบ (Low-level Systems Programming) และการพัฒนาแอปพลิเคชันระดับสูง (High-level Application Development)
 
-Unlike other systems languages, Ardium treats **GUI as a first-class citizen**. You can write native macOS apps (and soon Cross-platform) directly in the language standard library, without external bindings.
+สิ่งที่ทำให้ Ardium แตกต่างจากภาษาเชิงระบบอื่นๆ คือการให้ความสำคัญกับ **GUI ในระดับ First-class Citizen** นักพัฒนาสามารถสร้าง macOS Application แบบ Native (และจะรองรับ Cross-platform ในอนาคต) ได้โดยตรงจาก Standard Library ของภาษา โดยไม่ต้องพึ่งพา External Bindings
 
 ---
 
-## 🌟 Why Ardium?
+## 🌟 ทำไมต้องเลือก Ardium?
 
-| Feature | Ardium | C++ | Rust | Python |
+| คุณสมบัติ (Feature) | Ardium | C++ | Rust | Python |
 | :--- | :---: | :---: | :---: | :---: |
-| **Performance** | ⚡ Native (LLVM) | ⚡ Native | ⚡ Native | 🐢 Interpreted |
-| **Memory Safety** | 🛡️ RAII / Optional Manual | 💀 Manual | 🛡️ Borrow Checker | 🤖 GC |
-| **Learning Curve** | 😊 Low | 🤯 High | 🥵 Steep | 😊 Low |
-| **Built-in GUI** | ✅ **Yes (CoreUI)** | ❌ No | ❌ No | ❌ No |
-| **Compilation Speed**| 🚀 Fast | 🐢 Slow | 🐢 Slow | N/A |
+| **ประสิทธิภาพ (Performance)** | ⚡ Native (LLVM) | ⚡ Native | ⚡ Native | 🐢 Interpreted |
+| **ความปลอดภัยของหน่วยความจำ** | 🛡️ RAII / Optional Manual | 💀 Manual | 🛡️ Borrow Checker | 🤖 GC |
+| **ความยากง่ายในการเรียนรู้** | 😊 ต่ำ (Low) | 🤯 สูง (High) | 🥵 ชันมาก (Steep) | 😊 ต่ำ (Low) |
+| **รองรับ GUI ในตัว** | ✅ **มี (CoreUI)** | ❌ ไม่มี | ❌ ไม่มี | ❌ ไม่มี |
+| **ความเร็วในการคอมไพล์**| 🚀 เร็ว | 🐢 ช้า | 🐢 ช้า | N/A |
 
-### Key Features
-- **No Garbage Collector:** Deterministic memory management using RAII (`@owned`) and manual pointers.
-- **Native Compilation:** Compiles directly to optimized machine code via LLVM 19.
-- **Declarative UI:** Build native macOS apps with SwiftUI-like syntax (`@VClass`, `@HClass`).
-- **Seamless C Interop:** Call C functions directly with zero overhead.
+### ✨ คุณสมบัติเด่น (Key Features)
 
----
-
-## 📸 Demo
-!image[gui.png]
+* **ไร้ Garbage Collector:** จัดการหน่วยความจำอย่างแม่นยำ (Deterministic) ด้วยระบบ RAII (`@owned`) พร้อมทางเลือกในการจัดการ Pointer แบบ Manual
+* **Native Compilation:** คอมไพล์เป็น Machine Code ประสิทธิภาพสูงผ่าน **LLVM 19**
+* **Declarative UI:** สร้าง Native macOS Apps ด้วยไวยากรณ์ที่เข้าใจง่ายคล้าย SwiftUI (เช่น `@VClass`, `@HClass`)
+* **Seamless C Interop:** เรียกใช้งานฟังก์ชันภาษา C ได้โดยตรงทันทีโดยไม่มี Overhead
 
 ---
 
-## 🚀 Quick Start
+## 📸 ตัวอย่างการใช้งาน (Demo)
 
-### Installation
+![Ardium GUI Demo](gui.png)
 
-Currently, you can build Ardium from source (macOS/Linux):
+---
 
-```bash
-# Clone the repo
-git clone [https://github.com/spuaiclub-oss/ardium.git](https://github.com/dotmini/ardium.git)
-cd ardium
+## 🚀 การเริ่มต้นใช้งาน (Quick Start)
 
-# Build the compiler (Requires OCaml & LLVM)
-dune build
+### การติดตั้ง (Installation)
 
-# Add to path (Optional)
-export PATH=$PATH:$(pwd)/_build/default/bin
+ปัจจุบันสามารถติดตั้ง Ardium ได้โดยการ Build จาก Source Code (รองรับ macOS/Linux):
+
+1. **โคลนโปรเจกต์ (Clone the repository)**
+   ```bash
+   git clone [https://github.com/dotmini/ardium.git](https://github.com/dotmini/ardium.git)
+   cd ardium
