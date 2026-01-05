@@ -31,8 +31,7 @@ Unlike other systems languages, Ardium treats **GUI as a first-class citizen**. 
 ---
 
 ## 📸 Demo
-
-(gui.png)
+!image[gui.png]
 
 ---
 
