@@ -2,7 +2,7 @@
 
 **The High-Performance Systems Language with First-Class Native UI.**
 
-![Ardium Badge](https://img.shields.io/badge/Status-Alpha-orange) ![License](https://img.shields.io/badge/License-MIT-blue) ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Ardium Badge](https://img.shields.io/badge/Status-Alpha-orange) ![License](arc.png)
 
 > **"Performance of C. Simplicity of Python. Native UI of Swift."**
 
