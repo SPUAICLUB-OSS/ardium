@@ -32,7 +32,7 @@ Unlike other systems languages, Ardium treats **GUI as a first-class citizen**. 
 
 ## 📸 Demo
 
-*(Place a GIF of your CoreUI window or N-Body simulation here)*
+*(gui.png)*
 
 ---
 
