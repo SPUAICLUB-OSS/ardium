@@ -49,7 +49,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/dotmini/ardium.git](https://github.com/dotmini/ardium.git)
+git clone [https://github.com/SPUAICLUB-OSS/ardium.git](https://github.com/SPUAICLUB-OSS/ardium.git)
 cd ardium
 
 # 2. Configure and Build
